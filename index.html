@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sangue Valente - Throne and Liberty</title>
+  <link rel="stylesheet" href="./dist/css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sofadi+One&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <header class="fixed-top">
+    <div id="menu">
+      <div class="content">
+        <div class="controle">
+          <div id="btn-cor">
+            <div class="ball"></div>
+          </div>
+        </div>
+        <navbar>
+          <ul id="nav-menu" class="menu-inativo">
+            <li>
+              <button class="botao-ativo" id="button-home"
+                onclick="setActiveButton('button-home'); document.getElementById('sectionProfile').scrollIntoView({ behavior: 'smooth' })">Início</button>
+            </li>
+            <li>
+              <button class="botao-normal" id="button-about"
+                onclick="setActiveButton('button-about'); document.getElementById('sectionAbout').scrollIntoView({ behavior: 'smooth' })">Sobre</button>
+            </li>
+            <li>
+              <button class="botao-normal" id="button-projects"
+                onclick="setActiveButton('button-projects'); document.getElementById('Projetos').scrollIntoView({ behavior: 'smooth' })">Plantel</button>
+            </li>
+            <li>
+              <button class="botao-normal" id="button-contact"
+                onclick="setActiveButton('button-contact'); document.getElementById('Contatos').scrollIntoView({ behavior: 'smooth' })">Contato</button>
+            </li>
+          </ul>
+          <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+            &#9776; <!-- ícone de menu hamburguer -->
+          </button>
+        </navbar>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="sectionProfile">
+      <div class="content">
+        <div class="call">
+          <div class="chamada1">
+            <h1 id="saudacao" class="linha"></h1>
+            <h1 id="meuNome" class="meuNome"></h1>
+            <p id="profissao"></p>
+          </div><!--chamada1-->
+          <div class="art">
+            <div class="art1">
+            </div><!--art1-->
+          </div><!--art-->
+        </div><!--call-->
+
+        <div class="meio">
+          <div class="lustre">
+            <p class="raio" id="btn-cor2"></p>
+          </div><!--lustre-->
+          <div class="chamada2"></div>
+        </div><!--meio-->
+
+        <div class="perfil">
+          <a href="https://github.com/danillolguimaraes">
+            <div class="avatar"></div>
+          </a>
+        </div><!--perfil-->
+      </div><!--content-->
+    </section><!--SectionPerfil-->
+    <section id="sectionAbout">
+      <div class="content">
+        <div class="maisSobre">
+          <h2 class="hper">Sobre o Clã</h2>
+          <p>Sangue Valente: A Guilda de Elite no Servidor Da Vinci!<br>
+
+            Junte-se à Sangue Valente! Somos uma guilda de alto nível focada nas maiores batalhas do jogo: Boss
+            Fights!<br> Desde
+            nossa fundação pelo líder Lydke, conquistamos um lugar de destaque no servidor Da Vinci, reunindo um Squad
+            ativo de
+            jogadores dedicados que compartilham um objetivo: crescer juntos e dominar o campo de batalha. 🛡️⚔️
+            <br><br>
+            🔹 O que oferecemos?
+
+            Caçadas Épicas: Enfrentamos Bosses de Guilda e Bosses Mundiais com estratégia e trabalho em equipe.
+            Crescimento em Comunidade: Ajudamos você com builds, farms, masmorras e muito mais. Aqui, você nunca estará
+            sozinho!
+            Sistema Justo de Recompensas: Nossa distribuição de itens valoriza sua contribuição. Nada de leilões
+            desiguais – com
+            nossa fila organizada, todos têm sua vez.
+            Espírito de Família: Mais do que uma guilda, somos uma família. Quem se junta a nós rapidamente entende o
+            propósito e se
+            sente em casa.
+            <br><br>
+            🔹 O que buscamos?
+            Jogadores comprometidos, prontos para crescer juntos e que compartilhem nossa visão de colaboração e união.
+            Embora nosso
+            foco atual seja PVE e fortalecimento interno, o PVP está nos nossos planos futuros!
+            <br><br>
+            💬 Pronto para fazer parte de algo maior?
+            Se você está em busca de uma guilda que valorize seus esforços e ofereça uma verdadeira experiência de
+            comunidade, a
+            Sangue Valente é o seu lugar! Venha compartilhar glórias, desafios e vitórias conosco.
+            <br><br>
+            📩 Entre em contato e faça parte da nossa história!
+          </p>
+
+          <!--Habilidades-->
+
+          <div class="habilidades">
+            <br />
+
+            <h2 class="hper">Todos os Bosses Diponíveis</h2>
+            <div class="skills">
+              <div id="tevent">
+                <p>Tevent</p>
+              </div>
+              <div id="bellandir">
+                <p>Bellandir</p>
+              </div>
+              <div id="talus">
+                <p>Talus</p>
+              </div>
+              <div id="nirma">
+                <p>Nirma</p>
+              </div>
+              <div id="murokai">
+                <p>Morokai</p>
+              </div>
+              <div id="minezerok">
+                <p>Minezerok</p>
+              </div>
+              <div id="malakar">
+                <p>Malakar</p>
+              </div>
+              <div id="kowasan">
+                <p>Kowasan</p>
+              </div>
+              <div id="junobote">
+                <p>Junobote</p>
+              </div>
+              <div id="chernobog">
+                <p>Chernobog</p>
+              </div>
+              <div id="aridus">
+                <p>Aridus</p>
+              </div>
+              <div id="cornelius">
+                <p>Cornelius</p>
+              </div>
+              <div id="aelon">
+                <p>Aelon</p>
+              </div>
+              <div id="adentus">
+                <p>Adentus</p>
+              </div>
+            </div>
+          </div>
+          <center>
+            <p id="resp" style="padding-bottom: 64px;">
+            </p>
+          </center>
+
+        </div>
+    </section>
+    <section id="Projetos">
+      <div class="content">
+        <div class="pcenter">
+          <h2>Plantel</h2>
+        </div>
+        <div class="ptitle">
+          <h3>Liderança</h3>
+        </div>
+        <p>Lydke - Líder</p>
+        <p>Revengenajungle - Conselheiro</p>
+        <p>GuiBFacco - Conselheiro</p>
+        <div class="ptitle">
+          <h3>Guardiões da Guilda</h3>
+        </div>
+        <p>Trysha</p>
+        <p>Lorisx</p>
+        <p>N1ightcore</p>
+        <p>Ninjou</p>
+        <p>Danilloneo</p>
+        <p>SanSulaOliver</p>
+        <p>Tiburcinho</p>
+        <p>ArtemisSan</p>
+        <p>SraElara</p>
+        <p>oCHeFaoXD</p>
+        <p>ARONCASTRO</p>
+        <p>AgataTorres</p>
+        <p>LadySiaht</p>
+        <p>Sanraaku</p>
+        <p>DaniPandora</p>
+        <p>ThalesCoelho</p>
+        <p>BranCoFK</p>
+        <p>Ridel</p>
+        <p>Heldring</p>
+        <p>Tonettin</p>
+        <p>velascooo</p>
+        <p>Widkat</p>
+    </section>
+    <section id="Objetivo">
+      <div class="content">
+        <h2 class="hper">Mais informações</h2>
+        <p>Temos 7 novas vagas na Guilda Sang Valente II!<br>
+          Nossos bosses são distribuídos igualitariamente para que todos tenham o devido direito de rodar sua sorte no
+          seu dia.
+
+          <br><br>
+          Não somos a maior guilda em quantidade, mas acreditamos na qualidade dos nossos jogadores e principalmente na
+          união que nos mantém todos os dias. Tanto para novos jogadores, quanto para guildas aliadas, vocês podem
+          agendar uma reunião via whatssap.
+          Basta clicar no botão do Whatssap e você será redirecionado.<br><br>
+
+          Não toleramos em hipotese nenhuma:<br>
+
+          1 - Nenhum tipo de agressão (bullying).<br>
+          2 - Nenhum tipo de trapassa.<br>
+          3 - Nenhuma covardia.<br>
+          <br>
+          Se você compactua destas premissas básicas, não hesite em nos chamar.
+        </p>
+      </div>
+    </section>
+    <footer>
+      <section id="Contatos">
+        <div class="content">
+          <h2>Contatos</h2>
+          <p>Basta clicar na opção Clique aqui e você será redirecionado para o nosso grupo do whatssap!</p><br>
+          <a href="https://chat.whatsapp.com/FG1Ih9g2BCwAtu4qf5Zx9N" target="_blank">Clique aqui!</a>
+        </div>
+      </section>
+    </footer>
+
+  </main>
+  <script src="https://kit.fontawesome.com/875b9c9e59.js" crossorigin="anonymous"></script>
+  <script src="./dist/js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    // efeito menu clica e muda de cor
+    function setActiveButton(activeButtonId) {
+      // Seleciona todos os botões dentro do nav-menu
+      const buttons = document.querySelectorAll('#nav-menu button');
+
+      // Para cada botão, remova a classe botao-ativo e adicione botao-normal
+      buttons.forEach(button => {
+        button.classList.remove('botao-ativo');
+        button.classList.add('botao-normal');
+      });
+
+      // Adiciona a classe botao-ativo ao botão que foi clicado
+      const activeButton = document.getElementById(activeButtonId);
+      if (activeButton) {
+        activeButton.classList.remove('botao-normal'); // Remove a classe botao-normal
+        activeButton.classList.add('botao-ativo');     // Adiciona a classe botao-ativo
+      }
+    }
+
+
+    //habilidades
+
+    var aresp = document.getElementById('resp');
+
+    // Adiciona os eventos de clique para cada elemento
+    var tv = document.getElementById('tevent').addEventListener('click', resposta);
+    var bll = document.getElementById('bellandir').addEventListener('click', resposta);
+    var tal = document.getElementById('talus').addEventListener('click', resposta);
+    var nir = document.getElementById('nirma').addEventListener('click', resposta);
+    var mur = document.getElementById('murokai').addEventListener('click', resposta);
+    var mine = document.getElementById('minezerok').addEventListener('click', resposta);
+    var mala = document.getElementById('malakar').addEventListener('click', resposta);
+    var kow = document.getElementById('kowasan').addEventListener('click', resposta);
+    var juno = document.getElementById('junobote').addEventListener('click', resposta);
+    var cher = document.getElementById('chernobog').addEventListener('click', resposta);
+    var arid = document.getElementById('aridus').addEventListener('click', resposta);
+    var corn = document.getElementById('cornelius').addEventListener('click', resposta);
+    var exca = document.getElementById('aelon').addEventListener('click', resposta);
+    var aden = document.getElementById('adentus').addEventListener('click', resposta);
+
+    function resposta(event) {
+      // Se o clique for no parágrafo, impede a propagação para garantir que a div seja reconhecida
+      if (event.target.tagName.toLowerCase() === 'p') {
+        event.stopPropagation();
+        elementId = event.target.parentElement.id; // Usa o id da div pai do <p>
+      } else {
+        elementId = event.currentTarget.id; // Usa o id da div diretamente
+      }
+
+      // Condições para exibir a resposta
+      if (elementId === 'tevent') {
+        aresp.textContent = 'Tevent é um Archboss de nível 50 que aparece na borda noroeste das Ruínas de Turayne, no centro do Templo Tevent..';
+      } else if (elementId === 'bellandir') {
+        aresp.textContent = 'Bellandir é o primeiro Archboss desbloqueado através do sistema Milestone e é um verme gigantesco de nível 50 que aparece na Armadilha da Rainha na parte noroeste do Sandworm Lair.';
+      } else if (elementId === 'talus') {
+        aresp.textContent = 'Um dos chefes de nível anteriores é Talus, um chefe de nível 46 que aparece na parte oeste de The Raging Wilds.';
+      } else if (elementId === 'nirma') {
+        aresp.textContent = 'O chefe de nível 50, Nirma, aparece no 5º andar do Abismo de Syleus, na parte sudoeste do mapa. Semelhante a Aridus, as portas desta masmorra de mundo aberto se fecham durante a noite. Você pode usar uma Pedra de Invocação de Guilda para teletransportar seus companheiros de guilda para dentro enquanto as portas estão fechadas.';
+      } else if (elementId === 'murokai') {
+        aresp.textContent = 'O chefe de nível 40, Morokai, é o primeiro chefe de mundo aberto desbloqueado através do sistema de marcos de Throne e Liberty. Morokai aparece na porção sudeste da Floresta Carmine.';
+      } else if (elementId === 'minezerok') {
+        aresp.textContent = 'O Field Boss Minezerok de nível 50 aparece na Cripta Sombria no 1º Andar. Ao entrar nesta masmorra de mundo aberto, você simplesmente corre diretamente para o norte para chegar à sala em que Minezerok aparece.';
+      } else if (elementId === 'malakar') {
+        aresp.textContent = 'Malakar, o grande Olhos dos Desejos, é um chefe de nível 48 que pode ser encontrado na parte nordeste de Manawastes, acima do solo.';
+      } else if (elementId === 'kowasan') {
+        aresp.textContent = 'Nas profundezas das extremidades noroeste da Floresta Grayclaw, você encontra os chefes Kowazan e Lycan Kowazan de nível 50. Kowazan aparece durante o dia. Lycan Kowazan aparece durante a noite.';
+      } else if (elementId === 'junobote') {
+        aresp.textContent = 'Junobote é um Chefe de Campo de nível 50 que aparece no 1º Andar do Santuário do Desejo, no centro do Salão da Inteligência.';
+      } else if (elementId === 'chernobog') {
+        aresp.textContent = 'Figma é usado para design e prototipagem colaborativa.';
+      } else if (elementId === 'aridus') {
+        aresp.textContent = 'Aridus é um chefe de campo de nível 50 que aparece no 5º andar do Abismo de Syleus. Se Aridus estiver aparecendo durante a noite, certifique-se de estar dentro desta masmorra de mundo aberto, pois as portas se fecham, impedindo que mais jogadores entrem. Você pode usar uma Pedra de Invocação de Guilda para teletransportar seus companheiros de guilda para dentro enquanto as portas estão fechadas.';
+      } else if (elementId === 'cornelius') {
+        aresp.textContent = 'Existem várias maneiras de chegar a Cornelius, mas a mais fácil é entrar na masmorra de mundo aberto pelo primeiro andar e correr direto até ver a primeira grande rachadura no chão. Desça na fenda e voe para a direita, o que o leva diretamente para o Salão da Imortalidade.';
+      } else if (elementId === 'aelon') {
+        aresp.textContent = 'Para chegar a Grand Aelon, você pode viajar para o norte do Purelight Hill Waypoint ou voar para sudeste a partir do Purelight Tower Waypoint. A zona de luta do Grand Aelon é cercada por árvores, que os jogadores podem aproveitar para atirar nos inimigos de cima durante o PvP.';
+      } else if (elementId === 'adentus') {
+        aresp.textContent = 'O chefe de nível 50, Adentus, está localizado na parte sul das Ruínas de Turayne.';
+      }
+    }
+
+
+    //hamburguer
+
+    function toggleMenu() {
+      console.log('Clicado');
+      var menu = document.getElementById('nav-menu');
+      if (menu.classList.contains('menu-inativo')) {
+        menu.classList.remove('menu-inativo');
+      } else {
+        menu.classList.add('menu-inativo');
+      }
+    }
+
+    // Selecione o botão inteiro ao invés da bola
+    document.querySelector('#btn-cor').addEventListener('click', () => {
+      // Mova a bola
+      document.querySelector('.ball').classList.toggle('ball-move');
+
+      // Adicione ou remova a classe de tema escuro no body
+      document.body.classList.toggle('dark');
+    });
+
+    document.querySelector('#btn-cor2').addEventListener('click', () => {
+      // Mova a bola
+      document.querySelector('.ball').classList.toggle('ball-move');
+
+      // Adicione ou remova a classe de tema escuro no body
+      document.body.classList.toggle('dark');
+    });
+
+
+    //cores
+    var a = document.getElementById('btn-cor');
+    a.addEventListener('click', mudarCorDeFundo);
+    var b = document.getElementById('btn-cor2');
+    b.addEventListener('click', mudarCorDeFundo);
+    var c = document.getElementById('menu');
+    var d = document.getElementById('nav-menu');
+
+    var titulos = document.getElementsByClassName("hper");
+
+
+    function mudarCorDeFundo() {
+      if (document.body.style.backgroundColor === "black") {
+        // Se for preta, muda para branco
+        document.body.style.backgroundColor = "#250b08";
+        for (var i = 0; i < titulos.length; i++) {
+          titulos[i].style.color = '#250b08';
+        }
+        c.style.backgroundColor = '#250b08';
+        d.style.backgroundColor = '#250b08'
+      } else {
+        // Se for outra cor, muda para preto
+        document.body.style.backgroundColor = "black";
+        for (var i = 0; i < titulos.length; i++) {
+          titulos[i].style.color = 'black';
+        }
+        c.style.backgroundColor = 'black';
+        d.style.backgroundColor = 'black';
+      }
+    }
+  </script>
+
+</body>
+
+</html>
